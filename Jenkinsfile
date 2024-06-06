@@ -1,7 +1,7 @@
 pipeline {
   agent any
 
-  enviroment{
+  environment{
     DOCKER_IMAGE = 'node-hello-world'
   }
 
