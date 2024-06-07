@@ -19,7 +19,8 @@ pipeline {
                     docker.image(DOCKER_IMAGE).inside('-u root') {
                         sh 'npm config set cache /tmp/.npm-cache --global'
                         sh 'npm install --unsafe-perm'
-                        sh 'npm install mocha supertest --global'
+                        sh 'npm install mocha --global'
+                        sh 'npm install supertest --global'
                         sh 'npm test'
                     }
                 }
