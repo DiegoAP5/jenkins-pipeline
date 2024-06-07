@@ -7,11 +7,7 @@ pipeline {
   }
 
   stages {
-    stage('Limpiar Contenedores') {
-            steps {
-                    
-            }
-        }
+    
     stage ('Build') {
       steps {
         script {
