@@ -20,8 +20,10 @@ pipeline {
       steps {
         script {
           docker.image(DOCKERIMAGE).inside {
+            sh 'npm install mocha'
             sh 'npm install'
             sh 'npm test'
+            
           }
         }
       }
